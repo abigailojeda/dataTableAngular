@@ -2,7 +2,7 @@
 A simple way to select data from a table in Angular and send it to another component.  
 For this challenge I have mocked up the data in a json in the assets directory.
 
-➜ [Demo here](https://berryweb.netlify.app/home) 
+➜ [Demo here](https://data-table-angular.vercel.app/table) 
 
 ---
 

@@ -1,27 +1,40 @@
-# RegisterTable
+# Data Angular Table 📝
+A simple way to select data from a table in Angular and send it to another component.  
+For this challenge I have mocked up the data in a json in the assets directory.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
+➜ [Demo here](https://berryweb.netlify.app/home) 
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![](screenshots/layouts.png)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---  
 
-## Build
+## 📂  What do you need to have installed on your computer?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+➜ Angular: npm install -g @angular/cli
 
-## Running unit tests
+---
+### 📚  This project use:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+➜  Lazy loading modules  
+➜  HttpClient    
+➜  Models/Interfaces
+➜  Pipes  
+➜  @Input  
+➜  @Output  
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## ⚙️ Project Settings
+
+To test locally you just need:  
+
+➜ npm install
+
+
+---
+ 🙋🏻‍♀️ [Abigail Ojeda Alonso](https://es.linkedin.com/in/abigail-ojeda)
+

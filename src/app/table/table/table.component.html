@@ -1,0 +1,53 @@
+<div class="selection-cont">
+    <h2>User's Ranking</h2>
+    <h4>Click on rows to select users to save</h4>
+    <table class="table-cont">
+        <tr>
+            <th class="table-title"></th>
+        </tr>
+        <tr class="header">
+         <th>Name</th>
+         <th>Puntuation</th>
+         <th>Attemps</th>
+         <th>Level</th>
+        </tr>
+         <ng-container *ngFor="let user of users">
+     
+             <tr class="row {{rowsSelected.includes(user)? 'selected':''}}" (click)="selectRows(user)">
+                 <td>
+                     {{user?.name | titlecase}}
+                 </td>
+                 <td>
+                     {{user?.puntuation}}
+                 </td>
+                 <td>
+                     {{user?.attemps}}
+                 </td>
+                 <td>
+                     {{user?.level}}
+                 </td>
+                 <td class="check-td">
+                    <svg class="check {{rowsSelected.includes(user)? 'selected':''}}" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="transparent"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>
+                 </td>
+             </tr>
+         </ng-container>
+     </table>
+    <div class="btn-cont"
+        *ngIf="!selectionIsVisible"
+    >
+    <button
+        (click)="cleanSelection()"
+        [disabled]="rowsSelected?.length<1"
+    >Clean Selection</button>
+    <button
+        (click)="showSelection()"
+        [disabled]="rowsSelected?.length<1"
+    >Save Selection</button>
+    </div>
+</div>
+
+<app-table-selected
+    *ngIf="selectionIsVisible"
+    (showSelection) = "showSelection()"
+    [selection] = "rowsSelected"
+></app-table-selected>

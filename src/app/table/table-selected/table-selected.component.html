@@ -1,0 +1,37 @@
+<div class="modal-bg"
+    (click)="toggleSelectionIsVisible()"
+></div>
+
+
+    <div class="selection-cont">
+       
+        <table class="table-cont">
+            <h3>Your selection:</h3>
+            <tr>
+             <th>Name</th>
+             <th>Puntuation</th>
+             <th>Attemps</th>
+             <th>Level</th>
+            </tr>
+             <ng-container *ngFor="let user of selection">
+         
+                 <tr >
+                     <td>
+                         {{user.name | titlecase}}
+                     </td>
+                     <td>
+                         {{user.puntuation}}
+                     </td>
+                     <td>
+                         {{user.attemps}}
+                     </td>
+                     <td>
+                         {{user.level}}
+                     </td>
+                 </tr>
+             </ng-container>
+         </table>
+         <button
+             (click)="toggleSelectionIsVisible()"
+         >Back to selection</button>
+    </div>

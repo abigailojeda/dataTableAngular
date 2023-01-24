@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'table',
+    path: '',
     loadChildren: () => import('./table/table.module').then( m => m.TableModule ),
   },
   {
